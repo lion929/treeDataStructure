@@ -1,0 +1,36 @@
+.roots {
+    position: relative;
+    margin-left: 12px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.roots:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 2px solid black;
+}
+
+.child_nodes {
+    padding-left: 15px;
+    line-height: 30px;
+    color: blue;
+    font-weight: bold;
+    position: relative;
+}
+
+.roots .child_nodes:before {
+    content: "";
+    width: 10px;
+    border-top: 2px solid black;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+.roots .child_nodes {
+    cursor: pointer;
+}
